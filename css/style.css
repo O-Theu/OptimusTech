@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --text-color: #667085;
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+  }
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #3A404E;
+    font-weight: 500;
+}
+
+.logo {
+    margin: 0 8px ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.links a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-right: 2rem;
+    opacity: .9;
+}
+
+.links a:hover {
+    opacity: 1;
+} 
+
+button {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    background: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    opacity: .9;
+}
+
+button:hover {
+    opacity: 1;
+} 
+
+button#signUp {
+    background-color: #8E2424;
+    color: #FFF;
+}
+
+/* Cabeçalho - Primeira seção */
+
+.secao-sobre {
+    padding: 7rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    gap: 1rem;
+}
+
+#secao-titulo {
+    font-weight: 600;
+    font-size: 16px;
+    color: #8E2424;
+    margin-bottom: 40px;
+}
+
+
+#secao-subtitulo {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+
+#secao-paragrafo {
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 791px;;
+    text-align: center;
+    line-height: 1.5rem;
+    color: #667085;
+}
+
+/* Secao de informacoes */
+
+.lista {
+    padding: 6rem 0 0 0;
+    display: flex;
+}
+
+.lista-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 10px 0 10px;
+}
+
+
+.lista-item h2{
+    font-size: 4rem;
+    color: #8E2424;
+    line-height: 5rem;
+}
+
+.lista-item h3{
+    font-size: 18px;
+    line-height: 3rem;
+}
+
+.lista-item p {
+    max-width: 280px;
+    text-align: start;
+    color: #667085;
+}
+
+/* Secao de vagas abertas */
+
+.secao-vagas {
+    padding: 3rem 0;
+    text-align: center; 
+    gap:30px
+}
+
+button#btn-vagas {
+    background: rgba(142, 36, 36, 0.05);
+    color: #8E2424;
+    opacity: .9;
+}
+
+button#btn-vagas:hover {
+    opacity: 1;
+}
+
+#vagas-subtitulo {
+    margin-bottom: .6em;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+#vagas-paragrafo {
+    font-size: 20px;
+    color: var(--text-color);
+    margin-bottom: 2em;
+}
+
+.vagas {
+    width: 40%;
+    margin: 3em auto;
+    text-align: start;
+}
+
+.vagas__lista {
+    list-style-type: none;
+}
+
+.vagas__titulo {
+    font-size: 20px;
+    font-weight: 500;
+    color: #101828;
+    margin: 3em 0;
+}
+
+.vagas__item {
+    margin-left: 2em;
+}
+
+.lista__titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.lista__paragrafo {
+    display: inline-block;
+    padding: 1.5em 1.2em 5em 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #667085;
+}
+
+.sobre {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    background: rgba(196, 25, 25, 0.03);
+    border-radius: 16px;
+}
+
+.sobre__titulo {
+    font-size: 14px;
+    font-weight: 600;
+    color: #8E2424;
+    padding-top: 3em;
+}
+
+.sobre__texto {
+    font-size: 36px;
+    font-weight: 500;
+    color: #101828;
+    margin: 1em 4em;
+}
+
+.imagem__perfil {
+    width: 56px;
+}
+
+.nome__perfil {
+    font-size: 16px;
+    font-weight: 500;
+    color: #101828;
+    margin: 1em 0;
+}
+
+.texto__perfil {
+    font-size: 14px;
+    font-weight: 400;
+    color: #667085;
+}
+
+.contato {
+    text-align: center;
+    margin: 10em 0;
+}
+
+.contato__titulo {
+    font-size: 36px;
+    font-weight: 600;
+    color: #101828;
+}
+
+.contato__texto {
+    font-size: 20px;
+    font-weight: 400;
+    color: #667085;
+    margin: 1.5em 0; 
+}
+
+.email {
+    padding: 1em;
+    width: 15%;
+    margin: 1.5em .5em 3em 0;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+}
+
+.enviar {
+    background-color: #8E2424;
+    color: #FFFFFF;
+    padding: .9em 1.5em;
+}
+
+.rodape__direitos {
+    font-size: 16px;
+    font-weight: 400;
+    color: #98A2B3;
+    padding-bottom: 5em;
+}
